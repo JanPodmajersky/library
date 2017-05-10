@@ -20,14 +20,7 @@ export class GenericRouter {
         	if (!genericObjects ) return res.status(404).send("No Object found.");
 	    	res.status(200).json(genericObjects);
 	    });
-    	/*
-    	this.router.get("/search", async(req, res, next) => {
-	     	const genericObjects = await this.genericObject.find({name: req.query.name}).lean().populate('authors').exec();
-	     	
-	     	if (!genericObjects || genericObjects == "" ) return res.status(404).send("No Object found.");
-	    	res.status(200).json(genericObjects);
-	    });
-		*/
+    	
 	    this.router.get("/:id", async(req, res, next) => {
 	     	const genericObjects = await this.genericObject.findById(req.params.id).lean().populate('authors').exec();
 	     	
