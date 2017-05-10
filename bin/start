@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+"use strict";
+
+var server = require("../dist/server");
+
+var app = server.Server.run().app;
+var port = process.env.PORT || 3000;
+
+var server = app.listen(port, function() {
+  console.log('Express server API listening on port ' + port);
+});

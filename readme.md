@@ -1,0 +1,1 @@
+This is an example of Node.js REST API with MongoDB.

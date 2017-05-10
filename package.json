@@ -1,0 +1,39 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "description": "Test REST API for Library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=development nodemon ./bin/start",
+    "grunt": "grunt",
+    "start": "node ./bin/start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JanPodmajersky/library.git"
+
+  },
+  "keywords": [
+    "Library",
+    "REST"
+  ],
+  "author": "Jan",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.8"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.16.3",
+    "@types/mongodb": "^2.2.2",
+    "@types/mongoose": "^4.7.11",
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-ts": "^6.0.0-beta.15",
+    "nodemon": "^1.11.0",
+    "typescript": "^2.3.2"
+  }
+}
